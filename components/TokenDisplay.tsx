@@ -12,7 +12,6 @@ export function TokenDisplay({ tokenRef: tokenRefKey, tokenBonding: tokenBonding
   }
 
   return <div>
-   <img src={image} />
    { metadata && <div>
      <div><b>{metadata.data.name}</b></div>
      <div>{metadata.data.symbol}</div>
@@ -25,5 +24,6 @@ export function TokenDisplay({ tokenRef: tokenRefKey, tokenBonding: tokenBonding
        Value Locked: { pricing.locked() }
      </div>
    </div> }
+   <img src={image} />
   </div>
 }
